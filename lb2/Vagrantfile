@@ -20,7 +20,7 @@ Vagrant.configure("2") do |config|
     firewall-cmd --permanent --add-port=3389/tcp # Allow XRDP through the firewall #
     firewall-cmd --reload # reload the firewall #
 
-    'useradd USER; echo -e "al-Lad71\nal-Lad71" | passwd USER' # Create USER and set new password #
+    'useradd user; echo -e "al-Lad71\nal-Lad71" | passwd user' # Create user and set new password #
     
    SHELL
 end
