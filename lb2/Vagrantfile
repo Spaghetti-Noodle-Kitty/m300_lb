@@ -12,13 +12,15 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm # Add epel repo #
     yum -y install xrdp tigervnc-server # Install the RDP-Server and the daemon for it #
+    yum -y install lightdm # install DM #
+    yum -y install openbox # install WM #
 
     systemctl start xrdp # Start xrdp #
 
     firewall-cmd --permanent --add-port=3389/tcp # Allow XRDP through the firewall #
     firewall-cmd --reload # reload the firewall #
 
-    'useradd USER; echo -e "al-Lad71\nal-Lad71" | passwd USER' #Create USER and set new password#
+    'useradd USER; echo -e "al-Lad71\nal-Lad71" | passwd USER' # Create USER and set new password #
     
    SHELL
 end
