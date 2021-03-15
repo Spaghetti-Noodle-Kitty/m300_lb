@@ -1,6 +1,6 @@
 # 👀 LB02 M300 👀 
 ## 💡 Projektidee 💡
-### 🔐 Eine Security-Box erbauen 🔐
+### 🔐 Eine Security-Box bauen 🔐
 > * Vagrant sollte automatisch eine Security-Box erstellen
 > * Diese Security-Box sollte über RDP erreichbar sein
 > * Die Security-Box erlaubt dem Nutzer zugriff auf etliche Privatsphären-wahrende-Features enthalten
