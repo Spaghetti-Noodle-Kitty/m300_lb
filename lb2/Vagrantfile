@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
 
     cd /home/user
     ls -al
-    echo openbox-sesion > .xsession #set xsession session type #
+    echo "openbox-session" > .xsession #set xsession session type #
     chmod +x .xsession # make .xsession executable #
     ls -al
 
