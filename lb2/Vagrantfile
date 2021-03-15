@@ -16,8 +16,10 @@ Vagrant.configure("2") do |config|
     yum -y install openbox # install WM #
     yum -y install terminator # install a terminal emulator #    
     yum -y install nautilus # install filemanager #
+    yum -y install firefox # install web browser #
+    yum -y install google-droid-sans-mono-fonts # install monospace fonts #
 
-    systemctl enable xrdp
+    systemctl enable xrdp # allow xrdp to start on login #
 
     firewall-cmd --permanent --add-port=3389/tcp # Allow XRDP through the firewall #
     firewall-cmd --reload # reload the firewall #
@@ -31,8 +33,9 @@ Vagrant.configure("2") do |config|
     chmod +x .xsession # make .xsession executable #
     ls -al
 
-    echo -e "al-Lad7" | su -l user
-    echo -e "al-Lad7" | sudo systemctl start xrdp # Start xrdp #
-    echo -e "al-Lad7" | sudo systemctl isolate graphical.target # Start a user session #
+    echo -e "al-Lad71" | su -l user # login as user #
+    echo -e "al-Lad71" | sudo chown user:user ~/.config # fix config permissions for nautilus #
+    echo -e "al-Lad71" | sudo systemctl start xrdp # Start xrdp #
+    echo -e "al-Lad71" | sudo systemctl isolate graphical.target # Start a user session #
    SHELL
 end
