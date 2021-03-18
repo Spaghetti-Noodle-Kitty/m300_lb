@@ -17,6 +17,9 @@ end' > Vagrantfile
 vagrant up
 vagrant ssh
 ```
+#### 🤔 Was passiert hier? 🤔
+
+
 ### 📦 Pakete aufsetzen 📦
 ```sh
 rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm # Add epel repo #
