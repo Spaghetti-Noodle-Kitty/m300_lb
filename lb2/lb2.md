@@ -93,3 +93,26 @@ echo -e "al-Lad71" | sudo systemctl isolate graphical.target
 
 
 
+## ⚙️ Reflexion ⚙️
+### 🔄 Schwierigkeiten 🔄
+> Durch dieses Projekt habe ich etliche neue Dinge erlernt und einige weitere Dinge erfahren, die ich nicht erwartet hätte.
+> Zuerst, der Fakt der mich am meisten überrascht hat: Linux-Usernamen können nicht mit einem Grossbuchstaben starten!
+> Dieser Punkt hat mich für einige Zeit davon abgehalten, am Projekt weiter zu arbeiten, bis ich diese Regel zufällig gefunden habe.
+>
+> Nächstens hätten wir die generelle Schwierigkeit ein Custom-GUI zusammenzustellen.
+> Da ich die Grösse des GUIs möglichst klein halten wollte habe ich mich entschieden, lightdm (ein sehr kleiner Display-Manager)
+> und Openbox (ein minimalistisches GUI per Maus gesteuert) als Basis zu verwenden.
+> Ich hatte zwar bereits erfahrungen mit GUI-Customization und installation, jedoch war die Erfahrung mit Vagrant etwas unangenehmer,
+> durch das permanente "vagrant up" & "vagrant destroy"
+>
+> Durch einen lustigen Bug in Windows 10 konnte ich ebenfalls Vagrant nicht auf meiner Workstation verwenden.
+> Durch die Aktivierung von Hyper-V konnte Vagrant offenbar nicht auf Intel VT-x zugreifen.
+> Das hätte zwar heissen müssen, dass keine VMs laufen können, jedoch starten alle VMs eigentlich ohne Probleme,
+> nur Vagrant erkennt die VM danach nicht als aktiv.
+> Dieses Problem wurde aber relativ schnell gelöst, in dem ich Vagrant auf dem Laptop installierte (der auch Intel VT-x und Hyper-V verwendet🙃).
+
+### 👩‍💻 Projektfazit 👩‍💻
+> Alles in Allem hat mir die Projektarbeit sehr viel Spass gemacht.
+> Trotz den vielen Schwierigkeiten die sich mir in den Weg stellten habe ich nie die Motivation verloren (könnte an Linux liegen),
+> die Arbeit war abwechselnd und genau genug Fordernd, sodass ich ein funktionsfähiges Produkt abliefern konnte.
+ 
