@@ -88,7 +88,7 @@ echo -e "al-Lad71" | sudo systemctl start xrdp
 echo -e "al-Lad71" | sudo systemctl isolate graphical.target
 ```
 #### 🤔 Was passiert hier? 🤔
-> Als letztes werden nun noch XRDP gestartet
+> Als letztes wird nun noch XRDP gestartet.
 > Ebenfalls wird Systemd hier aufgefordert die GUI-Treiber usw. bereitzustellen
 
 
