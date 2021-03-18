@@ -5,7 +5,6 @@ Vagrant.configure("2") do |config|
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
-  # NOTE: This will enable public access to the opened port
   config.vm.network "forwarded_port", guest: 3389, host: 42069
 
   # Install needed Software #
@@ -18,6 +17,7 @@ Vagrant.configure("2") do |config|
     yum -y install nautilus # install filemanager #
     yum -y install firefox # install web browser #
     yum -y install google-droid-sans-mono-fonts # install monospace fonts #
+    yum -y install wget # add a console web-downloader #
 
     systemctl enable xrdp # allow xrdp to start on login #
 
@@ -36,7 +36,12 @@ Vagrant.configure("2") do |config|
     echo -e "al-Lad71" | su -l user # login as user #
     echo -e "al-Lad71" | sudo mkdir ~/.config # create config folder for nautilus #
     echo -e "al-Lad71" | sudo mkdir ~/.config/nautilus # create nautilus preferences folder #
+
+    wget -O -q https://dist.torproject.org/torbrowser/10.0.0.13/tor-browser-linux64-10.0.13_en-US.tar.xz | tar -Jxf # Download and extract Tor Browser #
+    ls -al
+
     echo -e "al-Lad71" | sudo systemctl start xrdp # Start xrdp #
     echo -e "al-Lad71" | sudo systemctl isolate graphical.target # Start a user session #
+    ip a show # Show current ip for RDP #
    SHELL
 end
