@@ -40,11 +40,11 @@ yum -y install wget
 > Danach werden die RDP-Pakete und ein VNC-Server heruntergeladen.
 >
 > Nächstens werden die grafischen Pakete heruntergeladen;
->   Erst ein Display-Manager, der den Display selbst managed
->   Weiter geht es mit unserem Window-Manager, also dem Paket, das das Fenster-Rendering erlaubt
->   Zusätzlich werden einige Usability-Pakete installiert, ein Filemanager, ein Terminal-Emulator und ein Webbrowser
->   Zulezt wird ein Monospace-Font installiert, der die Darstellung der Fenster verbessert
->   Ebenfalls wird wget heruntergeladen, damit wir anschliessend den Tor-Client downloaden können.
+> * Erst ein Display-Manager, der den Display selbst managed
+> * Weiter geht es mit unserem Window-Manager, also dem Paket, das das Fenster-Rendering erlaubt
+> * Zusätzlich werden einige Usability-Pakete installiert, ein Filemanager, ein Terminal-Emulator und ein Webbrowser
+> * Zulezt wird ein Monospace-Font installiert, der die Darstellung der Fenster verbessert
+> * Ebenfalls wird wget heruntergeladen, damit wir anschliessend den Tor-Client downloaden können.
 
 
 ### 🛠️ Systemd & Firewall konfigurieren 🛠️
