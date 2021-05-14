@@ -25,7 +25,7 @@ vagrant ssh
 > Danach wird die Vagrant-Maschine gestartet und wir verbinden uns per SSH.
 
 ### 📦 Container definieren 📦
-#### MySQL definieren
+#### Ⓜ️ MySQL definieren Ⓜ️
 ```sh
 db:
     image: mysql:latest
@@ -41,7 +41,7 @@ db:
     - wpsite
 ```
 
-#### PHPMyAdmin definieren
+#### ⛵ PHPMyAdmin definieren ⛵
 ```sh
 phpmyadmin:
     depends_on:
@@ -57,7 +57,7 @@ phpmyadmin:
     - wpsite
 ```
 
-#### Wordpress definieren
+#### 📃 Wordpress definieren 📃
 ```sh
 wordpress:
     depends_on:
@@ -78,10 +78,6 @@ wordpress:
 > * Alle Container befinden sich im Netzwerk "wpsite"¨
 > * Die Passwörter und Accounts für die DB
 
-### 🛠️ Systemd & Firewall konfigurieren 🛠️
-
-
-
 ## ⚙️ Reflexion ⚙️
 ### 🔄 Schwierigkeiten 🔄
 > Dieses Projekt war etwas schwierig zu realisieren, nicht nur verpasste ich einen grossen Teil der Arbeitszeit durch eine OP sondern auch durch einige Provider Schwierigkeiten.
@@ -93,4 +89,3 @@ wordpress:
 ### 💾 Quellenangabe 💾
 [Vagrant]("https://www.vagrantup.com/")
 [Docker]("https://hub.docker.com/")
-[]("")
