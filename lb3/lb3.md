@@ -1,6 +1,6 @@
 # 👀 LB03 M300 👀 
 ## 💡 Projektidee 💡
-### 🔐 Eine Wordpress Host mit Docker erstellen 🔐
+### 🔐 Ein Wordpress Host mit Docker erstellen 🔐
 > * Vagrant VM hosted eine Docker-Instanz, die eine Wordpress installation bereitstellt 
 > * Die Wordpress installation sollte durch die VM weitergeleitet werden
 > * Dafür werden folgende Container benötigt
@@ -83,9 +83,9 @@ wordpress:
 > Dieses Projekt war etwas schwierig zu realisieren, nicht nur verpasste ich einen grossen Teil der Arbeitszeit durch eine OP sondern auch durch einige Provider Schwierigkeiten.
 >
 > Erstens bin ich mittlerweile auf VMware Workstation 16 umgestiegen.
-> Vagrant sagt zwar aus, VMware zu unterstützen, jedoch benötige ich für die Workstation-Edition eine [$79 Lizenz]("https://www.vagrantup.com/vmware").
+> Vagrant sagt zwar aus, VMware zu unterstützen, jedoch benötige ich für die Workstation-Edition eine [$79 Lizenz](https://www.vagrantup.com/vmware).
 > Da nun aber Hyper-V und eine seperate VirtualBox instanz nicht funktionierten, hatte ich keine Möglichkeit das Projekt zu testen.
 
 ### 💾 Quellenangabe 💾
-[Vagrant]("https://www.vagrantup.com/")
-[Docker]("https://hub.docker.com/")
+[Vagrant](https://www.vagrantup.com/)
+[Docker](https://hub.docker.com/)
