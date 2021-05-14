@@ -26,7 +26,7 @@ vagrant ssh
 
 ### 📦 Container definieren 📦
 #### Ⓜ️ MySQL definieren Ⓜ️
-```sh
+```yml
 db:
     image: mysql:latest
     volumes:
@@ -42,7 +42,7 @@ db:
 ```
 
 #### ⛵ PHPMyAdmin definieren ⛵
-```sh
+```yml
 phpmyadmin:
     depends_on:
     - db
@@ -58,7 +58,7 @@ phpmyadmin:
 ```
 
 #### 📃 Wordpress definieren 📃
-```sh
+```yml
 wordpress:
     depends_on:
         - db
