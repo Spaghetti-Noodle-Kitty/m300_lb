@@ -28,22 +28,53 @@ vagrant ssh
 
 #### MySQL definieren
 ```sh
-  db:
+db:
     image: mysql:latest
     volumes:
-      - db_data:/var/lib/mysql
+        - db_data:/var/lib/mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: al-Lad71
-      MYSQL_DATABASE: mybase
-      MYSQL_USER: dockersql
-      MYSQL_PASSWORD: al-Lad71
+        MYSQL_ROOT_PASSWORD: al-Lad71
+        MYSQL_DATABASE: mybase
+        MYSQL_USER: dockersql
+        MYSQL_PASSWORD: al-Lad71
     networks:
     - wpsite
 ```
 
 #### PHPMyAdmin definieren
+```sh
+phpmyadmin:
+    depends_on:
+    - db
+    image: phpmyadmin:latest
+    restart: always
+    ports:
+        - '8080:80'
+    environment:
+    PMA_HOST: db
+    MYSQL_ROOT_PASSWORD: al-Lad71
+    networks:
+    - wpsite
+```
 
+#### Wordpress definieren
+```sh
+wordpress:
+    depends_on:
+        - db
+    image: wordpress:latest
+    ports:
+        - '8000:80'
+    restart: always
+    volumes: ['./:/var/www/html']
+    environment:
+        WORDPRESS_DB_HOST: db:3306
+        WORDPRESS_DB_USER: dockersql
+        WORDPRESS_DB_PASSWORD: al-Lad71
+    networks:
+    - wpsite
+```
 
 ### 🛠️ Systemd & Firewall konfigurieren 🛠️
 ```sh
