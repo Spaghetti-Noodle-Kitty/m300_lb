@@ -87,5 +87,5 @@ wordpress:
 > Da nun aber Hyper-V und eine seperate VirtualBox instanz nicht funktionierten, hatte ich keine Möglichkeit das Projekt zu testen.
 
 ### 💾 Quellenangabe 💾
-> [Vagrant](https://www.vagrantup.com/)
+> [Vagrant](https://www.vagrantup.com/) <br/>
 > [Docker](https://hub.docker.com/)
